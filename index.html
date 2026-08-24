@@ -52,8 +52,89 @@
       </div>
     </header>
     <main class="content">
-      <section class="reservation" id="reservation"></section>
+      <section class="reservation" id="reservation">
+        <h2 class="form__title">Reservar una mesa</h2>
+        <form class="form">
+          <fieldset class="fieldset">
+            <label class="form__label" for="name">Nombre *</label>
+            <input
+              class="form__input"
+              type="text"
+              name="reservation"
+              id="name"
+              placeholder="Nombre"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+            <label class="form__label" for="number"
+              >Número de comensales *</label
+            >
+            <input
+              class="form__input"
+              type="number"
+              name="reservation"
+              id="number"
+              placeholder="1-8"
+              min="1"
+              max="8"
+              required
+            />
+            <label class="form__label" for="datetime-local"
+              >Fecha y hora *</label
+            >
+            <input
+              class="form__input"
+              type="datetime-local"
+              name="reservation"
+              id="datetime-local"
+              required
+            />
+            <label class="form__label" for="email"
+              >Tu correo electrónico *</label
+            >
+            <input
+              class="form__input"
+              type="email"
+              name="reservation"
+              id="email"
+              placeholder="email@email.com"
+              required
+            />
+          </fieldset>
+          <button class="form__button" type="submit">Reservar una mesa</button>
+          <label class="form__label--checkbox">
+            <input class="form__checkbox-input" type="checkbox" required />
+            Acepto los términos de uso</label
+          >
+        </form>
+      </section>
     </main>
-    <footer class="footer" id="contact"></footer>
+    <footer class="footer" id="contact">
+      <div class="footer__container">
+        <div class="circle"></div>
+        <img
+          class="footer__logo"
+          src="images/logo_coffeeshop_light.svg"
+          alt="Logotipo de Triple Espresso"
+        />
+        <ul class="footer__social-media">
+          <li><h4 class="social-media-title">Redes sociales</h4></li>
+          <li>
+            <img
+              class="footer__social-media-icon"
+              src="./images/facebook_white.svg"
+            /><a class="footer__social-media-link" href="#">Facebook</a>
+          </li>
+          <li>
+            <img
+              class="footer__social-media-icon"
+              src="./images/instagram_white.svg"
+            /><a class="footer__social-media-link" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">©2026 Bryan Fernández</p>
+    </footer>
   </body>
 </html>
