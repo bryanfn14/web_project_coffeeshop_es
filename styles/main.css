@@ -8,7 +8,6 @@
   background-image: url("../images/background_reservation.svg");
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1;
 }
 
 .reservation {
@@ -72,7 +71,7 @@
 }
 
 .form__button:hover {
-  background-color: rgba(233, 110, 58, 0.2);
+  background-color: rgba(233, 110, 58, 0.7);
 }
 
 .form__label--checkbox {
@@ -99,8 +98,5 @@
 
 .form__checkbox-input:checked {
   background: #2a2a2a;
-}
-
-.form__checkbox-input:checked::after {
   content: url("../images/check.svg");
 }
