@@ -14,7 +14,7 @@
   position: absolute;
   bottom: 128px;
   left: -44px;
-  z-index: -1;
+  z-index: 0;
   background-color: #e96e3a;
   border-radius: 999px;
   width: 340px;
@@ -24,6 +24,8 @@
 .footer__logo {
   width: 105px;
   height: 39px;
+  position: relative;
+  z-index: 1;
 }
 
 .social-media-title {
